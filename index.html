@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Cumpleaños · Celebración</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- PORTADA -->
+  <section class="screen hero">
+    <div class="card hero-card">
+      <p class="kicker">SAVE THE DATE</p>
+      <h1>MIS 25 AÑOS 🥂</h1>
+      <p class="subtitle">Una noche para darlo todo con mi gente</p>
+    </div>
+  </section>
+
+  <!-- FECHA Y HORA -->
+  <section class="screen info-screen">
+    <div class="card">
+      <p class="kicker">CUÁNDO</p>
+      <h2>FECHA & HORA</h2>
+      <div class="date-box">
+        <p>📅 <strong>Viernes, 8 de Enero de 2027</strong></p>
+        <p>⏰ <strong>21:00 H</strong> (Puntualidad británica 😉)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUGAR -->
+  <section class="screen location-screen">
+    <div class="card">
+      <p class="kicker">DÓNDE</p>
+      <h2>El Local</h2>
+      <p><strong>Ubicación de la fiesta</strong></p>
+      <p>Poner aquí la dirección exacta</p>
+      <!-- Cambia el enlace por la ubicación de Google Maps de tu sitio -->
+      <a href="https://maps.google.com" target="_blank" class="btn">VER EN GOOGLE MAPS</a>
+    </div>
+  </section>
+
+  <!-- DRESS CODE Y NOTAS -->
+  <section class="screen dress-screen">
+    <div class="card">
+      <p class="kicker">DRESS CODE</p>
+      <h2>Código de vestimenta</h2>
+      <p>Elegantes, arreglados y listos para la foto. ¡Quiero veros deslumbrar! ✨🕺🏻</p>
+    </div>
+  </section>
+
+  <!-- TEMPORIZADOR -->
+  <section class="screen timer-screen">
+    <div class="card">
+      <p class="kicker">LA CUENTA ATRÁS</p>
+      <h2>¿Cuánto queda para el lío?</h2>
+      <div id="timer" class="timer-grid">
+        <div><span id="days">00</span><p>Días</p></div>
+        <div><span id="hours">00</span><p>Horas</p></div>
+        <div><span id="minutes">00</span><p>Minutos</p></div>
+        <div><span id="seconds">00</span><p>Segundos</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RSVP (CONFIRMACIÓN) -->
+  <section class="screen rsvp-screen">
+    <div class="card">
+      <p class="kicker">CONFIRMACIÓN</p>
+      <h2>¿Te apuntas?</h2>
+      <p class="rsvp-desc">Por favor, confirma cuanto antes para poder cerrar la lista.</p>
+      
+      <form id="rsvp-form">
+        <div class="field">
+          <label for="name">Tu nombre y apellidos:</label>
+          <input type="text" id="name" required placeholder="Escribe tu nombre aquí">
+        </div>
+        
+        <div class="choices">
+          <label><input type="radio" name="attendance" value="Allí estaré dándolo todo 🔥" checked> ¡Contad conmigo! 🔥</label><br>
+          <label><input type="radio" name="attendance" value="Me lo pierdo esta vez 😢"> No podré ir esta vez 😢</label>
+        </div>
+
+        <button type="submit" class="btn btn-confirm">CONFIRMAR ASISTENCIA</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
